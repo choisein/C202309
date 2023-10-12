@@ -7,6 +7,8 @@ int main()
 	printf("1부터 2까지의 곱은 %ld\n", multiF(2));  //multiF함수 호출
 	printf("1부터 3까지의 곱은 %ld\n", multiF(3));
 	printf("1부터 5까지의 곱은 %ld\n", multiF(5));
+
+	return 0;
 }
 
 long multiF(int value)  //multiF함수 정의
