@@ -22,7 +22,7 @@ void initializeInfo(StudentInfo* ps) {
 void classifyStudents(StudentInfo *pscores, char targetGrade, int studentnum) {
 	printf("학생 성적 분류:\n");
 	for (int i = 0; i < studentnum; i++) {
-		char grade = ' ';
+		char grade = 'i';
 		if (pscores[i].scores >= 90)
 		{
 			grade = 'A';
@@ -116,7 +116,8 @@ int main() {
 
 	printRanks(students, num);  // 학생 순위 매기는 함수 호출
 
+	free(students);  //할당 된 메모리 해제
+
 	return 0;
 
-	free(students);  //할당 된 메모리 해제
 }
